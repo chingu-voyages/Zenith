@@ -1,6 +1,5 @@
 Django
-cors_header
-postgress
+django-cors-headers
 prisma
 graphene-django
 djoser

@@ -1,1 +1,27 @@
-.venv
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches and logs
+*.log
+logs/
+*.cache/
+
+# Environment variables
+.env
+
+# Static files directory (for development)
+staticfiles/
+
+# Media files directory (for development)
+media/
+
+# Local development settings
+local_settings.py
+
+# Database
+db.sqlite3
+
+# Virtual environment
+venv/
