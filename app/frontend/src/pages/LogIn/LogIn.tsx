@@ -4,7 +4,7 @@ export default class LogIn extends Component {
   render() {
     return (
       <>
-        <LandingNav />
+        <LandingNav currentPage="login" />
         <div>LogIn</div>
       </>
     );
