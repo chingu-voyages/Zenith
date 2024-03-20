@@ -1,25 +1,4 @@
-.landing {
-  header {
-    min-height: calc(100vh - 65px);
-    height: calc(100vh - 65px);
-    display: flex;
-    gap: 30px;
-    position: relative;
-    align-items: center;
-    padding: 50px 0;
-    .btn-tomap {
-      transition: all 0.3s ease-out;
-      &:hover {
-        background: #ff0000b3;
-        color: white;
-        box-shadow: 0 0 4px 1px #ff00004a;
-      }
-    }
-  }
-  @media screen and (min-width: 1568px) {
-    header {
-      min-height: 800px;
-      max-height: 800px;
-    }
-  }
+img {
+  box-shadow: 0px 30px 60px 5px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
 }
