@@ -1,0 +1,56 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+model User {
+  id Int @id @default(autoincrement())
+  created_at DateTime @default(now())
+  first_name String 
+  last_name String
+  messages Message[]
+  pins Pin[]
+  tags Tag[]
+  provider_id String? @unique()
+  email String @unique()
+}
+model Pin{
+  id Int @id @default(autoincrement())
+  created_at DateTime @default(now())
+  longitude Float
+  latitude Float
+  elevation Float
+  radius_distance Float
+  labels PinOnTags[]
+  messages MessageOnPins[]
+  user User? @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  user_id Int?
+}
+model Tag {
+  id Int @id @default(autoincrement())
+  tag_creator_id Int?
+  tag_creator User? @relation(fields: [tag_creator_id], references: [id])
+  pins PinOnTags[]
+}
+model PinOnTags {
+  tag Tag @relation(fields: [tag_id], references: [id])
+  tag_id Int
+  pin Pin? @relation(fields: [pin_id], references: [id]) 
+  pin_id Int
+  @@id([pin_id, tag_id])
+}
+model Message {
+  id Int @id @default(autoincrement())
+  created_at DateTime @default(now())
+  title String
+  message String?
+  user_id Int?
+  user User? @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  pins MessageOnPins[]
+}
+model MessageOnPins {
+  message Message @relation(fields: [message_id], references: [id])
+  message_id Int
+  pin Pin? @relation(fields: [pin_id], references: [id]) 
+  pin_id Int
+  @@id([message_id, pin_id])
+}
