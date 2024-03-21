@@ -10,7 +10,6 @@ def generate_prisma_schema():
     Generates a Prisma schema from the Prisma API.
     """
     # Define the command to execute in the command line
-    # command = "python -m prisma db push --schema '../../prisma/schema.prisma'"
     subprocess.call([sys.executable, '-m', 'prisma', 'db', 'push', '--schema', './prisma/schema.prisma'])
 def main():
     #initialize secrets
