@@ -57,6 +57,6 @@ coding!
 - Tris Dev: [GitHub](https://github.com/trisDeveloper/) / [LinkedIn](https://www.linkedin.com/in/tris-dev-017627226/)
 - Arky Asmal: [GitHub](https://github.com/aasmal97) / [LinkedIn](https://www.linkedin.com/in/arky-asmal)
 - Tishtanya Shaw: [GitHub](https://github.com/TishShaw) / [LinkedIn](https://linkedin.com/in/tishtanya-shaw)
-- Teammate name #4: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
+- Teammate name #4: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/sushghosh)
 - Teammate name #5: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
 - Teammate name #6: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
