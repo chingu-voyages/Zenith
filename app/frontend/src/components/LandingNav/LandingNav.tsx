@@ -18,7 +18,22 @@ export default function LandingNav({ currentPage }: LandingNavProps) {
 
   // Get button text and link based on the current page
   const { text, link } = getButtonTextAndLink();
-
+  // scroll inside landing page
+  const scrollToEl = (section: string) => {
+    const Section = document.getElementById(section);
+    if (Section) {
+      Section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollToFeatures = () => {
+    scrollToEl("features");
+  };
+  const scrollToAbout = () => {
+    scrollToEl("about");
+  };
+  const scrollToHelp = () => {
+    scrollToEl("help");
+  };
   return (
     <nav className="bg-white">
       <div className="container m-auto px-3 py-3 flex items-center justify-between">
@@ -36,19 +51,23 @@ export default function LandingNav({ currentPage }: LandingNavProps) {
             Home
           </Link>
           <Link
-            to="/#features"
-            className="hidden sm:flex text-gray-500 hover:text-gray-900"
-          >
-            Features
-          </Link>
-          <Link
-            to="/#about"
+            to="#about"
+            onClick={scrollToAbout}
             className="hidden sm:flex text-gray-500 hover:text-gray-900"
           >
             About
           </Link>
           <Link
+            to="#features"
+            onClick={scrollToFeatures}
+            className="hidden sm:flex text-gray-500 hover:text-gray-900"
+          >
+            Features
+          </Link>
+
+          <Link
             to="/#help"
+            onClick={scrollToHelp}
             className="hidden sm:flex text-gray-500 hover:text-gray-900"
           >
             Help
