@@ -32,7 +32,7 @@ export default function LandingNav({ currentPage }: LandingNavProps) {
     scrollToEl("about");
   };
   const scrollToHelp = () => {
-    scrollToEl("help");
+    scrollToEl("contact");
   };
   return (
     <nav className="bg-white">
@@ -66,11 +66,11 @@ export default function LandingNav({ currentPage }: LandingNavProps) {
           </Link>
 
           <Link
-            to="/#help"
+            to="/#contact"
             onClick={scrollToHelp}
             className="hidden sm:flex text-gray-500 hover:text-gray-900"
           >
-            Help
+            Contact
           </Link>
           {/* Dynamic Button */}
           <Link
