@@ -1,0 +1,69 @@
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  align-content: center;
+  align-items: center;
+  padding: 0;
+  padding: 70px 0;
+  gap: 10%;
+}
+.member {
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  .blurdiv {
+    width: 200px;
+    height: 250px;
+    border: 2px solid #e11d4785;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    img {
+      width: 100%;
+      height: 100%;
+      border: 2px solid #e11d4785;
+      object-fit: cover;
+      filter: blur(3px);
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      img {
+        filter: blur(0px);
+      }
+    }
+  }
+}
+
+h4,
+.job,
+.desc {
+  text-align: left;
+}
+h4 {
+  padding-top: 20px;
+  font-weight: 900;
+  color: black;
+  font-size: 20px;
+}
+.job {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  color: #7a0e26;
+}
+.desc {
+  font-size: 16px;
+  padding: 10px 0;
+  letter-spacing: -1px;
+  color: #444;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
