@@ -57,3 +57,12 @@ model MessageOnPins {
   pin_id Int
   @@id([message_id, pin_id])
 }
+
+model Mountain {
+  id Int @id @default(autoincrement())
+  mountain_name String
+  mountain_height Float
+  mountain_range String
+  mountain_location String
+  countries String
+}
