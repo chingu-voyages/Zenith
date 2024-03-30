@@ -1,12 +1,44 @@
-img {
-  box-shadow: 0px 30px 60px 5px rgba(0, 0, 0, 0.2);
-  max-width: 100%;
-}
+// img {
+//   box-shadow: 0px 30px 60px 5px rgba(0, 0, 0, 0.2);
+//   max-width: 100%;
+// }
+
+/*header Get started button hover styles*/
 .btn-tomap {
   transition: all 0.3s ease-in;
   &:hover {
     box-shadow: 0px 1px 5px 1px rgba(255, 0, 43, 0.473);
     color: white;
     background-color: rgb(244 63 94);
+  }
+}
+
+/*feature cards*/
+.feature-item {
+  position: relative;
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+  .icons {
+    font-size: 50px;
+    padding-bottom: 20px;
+    color: #888;
+    transition: all 0.3s ease-in-out;
+  }
+  /*features icons hover animations*/
+  &:hover {
+    .icons {
+      color: rgb(244 63 94);
+    }
+    .fa-location-dot,
+    .fa-person-hiking,
+    .fa-tag {
+      transform: rotateY(180deg);
+    }
+    .fa-map,
+    .fa-mountain-sun,
+    .fa-paper-plane {
+      font-size: 62px;
+      padding: 0 0 20px 0;
+    }
   }
 }
