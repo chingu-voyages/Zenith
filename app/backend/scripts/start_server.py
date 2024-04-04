@@ -1,7 +1,13 @@
 import subprocess
 import sys
 from dotenv import load_dotenv
-from manage import main as start_django_server
+def start_django_server():
+    """
+    Starts the Django server.
+    """
+    # Define the command to execute in the command line
+    command = "python manage.py runserver 0.0.0.0:8000"
+    subprocess.call(command, shell=True)
 def grab_secrets(): 
     command = "doppler secrets download --no-file --format env > .env"
     subprocess.call(command, shell=True)
