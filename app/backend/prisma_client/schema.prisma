@@ -44,6 +44,8 @@ model PinOnTags {
   pin Pin? @relation(fields: [pin_id], references: [id]) 
   pin_id Int
   @@id([pin_id, tag_id])
+  @@index([tag_id])
+  @@index([pin_id])
 }
 model Message {
   id Int @id @default(autoincrement())
@@ -61,4 +63,6 @@ model MessageOnPins {
   pin Pin? @relation(fields: [pin_id], references: [id]) 
   pin_id Int
   @@id([message_id, pin_id])
+  @@index([message_id])
+  @@index([pin_id])
 }
