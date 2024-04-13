@@ -20,7 +20,6 @@ lerna-debug.log*
 node_modules/
 .pnpm/
 yarn-error.log
-package-lock.json
 
 # Cache directories
 .eslintcache
