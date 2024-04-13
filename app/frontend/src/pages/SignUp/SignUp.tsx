@@ -1,27 +1,27 @@
 import LandingNav from "../../components/LandingNav/LandingNav";
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 function SignUp() {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    password: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   firstName: "",
+  //   lastName: "",
+  //   email: "",
+  //   password: "",
+  // });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [name]: value,
-    }));
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prevFormData) => ({
+  //     ...prevFormData,
+  //     [name]: value,
+  //   }));
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Handle form submission here
+  //   console.log("Form submitted:", formData);
+  // };
 
   return (
     <>
@@ -32,7 +32,7 @@ function SignUp() {
       >
         <div className="max-w-md w-full bg-white p-8 rounded-md shadow-lg">
           <h2 className="text-2xl font-semibold mb-4">Sign Up</h2>
-          <form onSubmit={handleSubmit}>
+          <form>
             <div className="mb-4">
               <label
                 htmlFor="firstName"
@@ -44,8 +44,8 @@ function SignUp() {
                 type="text"
                 id="firstName"
                 name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
+                // value={formData.firstName}
+                // onChange={handleChange}
                 className="mt-1 p-2 border border-gray-300 rounded-md w-full"
                 required
               />
@@ -61,8 +61,8 @@ function SignUp() {
                 type="text"
                 id="lastName"
                 name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
+                // value={formData.lastName}
+                // onChange={handleChange}
                 className="mt-1 p-2 border border-gray-300 rounded-md w-full"
                 required
               />
@@ -78,8 +78,8 @@ function SignUp() {
                 type="email"
                 id="email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
+                // value={formData.email}
+                // onChange={handleChange}
                 className="mt-1 p-2 border border-gray-300 rounded-md w-full"
                 required
               />
@@ -95,8 +95,8 @@ function SignUp() {
                 type="password"
                 id="password"
                 name="password"
-                value={formData.password}
-                onChange={handleChange}
+                // value={formData.password}
+                // onChange={handleChange}
                 className="mt-1 p-2 border border-gray-300 rounded-md w-full"
                 required
               />
