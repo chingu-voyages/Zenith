@@ -2,6 +2,9 @@
 
 Zenith is your go-to app for discovering and conquering the highest peaks around the globe. Whether you're an outdoor enthusiast, hiker, or mountaineer, Zenith empowers you to explore high-altitude areas, plan your routes based on elevation, and prepare for epic adventures.
 
+# Live Demo
+https://chingu-voyages.github.io/Zenith/
+
 ## Features & Roadmap 🚀
 
 ### Version 1.0 (MVP) 1️⃣
