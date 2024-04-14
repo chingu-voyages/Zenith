@@ -3,7 +3,7 @@ import Landing from "./pages/Landing/Landing";
 import SignUp from "./pages/SignUp/SignUp";
 import LogIn from "./pages/LogIn/LogIn";
 
-export const router = createBrowserRouter([
+const routes = [
   {
     path: "/",
     element: <Landing />,
@@ -16,4 +16,8 @@ export const router = createBrowserRouter([
     path: "/login",
     element: <LogIn />,
   },
-]);
+];
+
+export const router = createBrowserRouter(routes, {
+  basename: "/Zenith",
+});
